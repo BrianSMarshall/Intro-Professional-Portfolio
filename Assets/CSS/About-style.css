@@ -1,0 +1,175 @@
+:root {
+    --primary-color: #000000;
+    --secondary-color: #1d1c1c;
+    --tertiary-color: #1694aa;
+    --style-color: #3eb8dd;
+  
+  }
+
+
+  body {
+    font-family: Arial;
+    padding: 10px;
+    background-image: url(../Pictures/aspenautumn.jpg);
+  }
+  
+  /* Header */
+  .header {
+    padding: 30px;
+    text-align: center;
+    background-image: url(../Pictures/aspenautumn.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  
+  .header h1 {
+    font-size: 50px;
+    text-shadow: 20px 10px 10px rgba(0, 0, 0, 0.78);
+  }
+  
+  /*navigation bar */
+  .nav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /*nav links */
+  .nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 25px 16px;
+    text-decoration: none;
+  }
+  
+  .nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  section {
+    min-height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: left;
+    background-color: #1e1f26;
+  }
+  .container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 100px auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+   
+  }
+  .left {
+    width: 100%;
+    height: 1000px;
+    background: url(../Pictures/aspenautumn.jpg)
+      no-repeat center / cover;
+    border-radius: 9px;
+    left: auto;
+  }
+  .right {
+    width: 50%;
+    min-height: 400px;
+    background-color: #303137;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 8px;
+    color: white;
+    margin-left: 150px;
+  }
+  .right h1 {
+    font-size: 40px;
+    font-weight: lighter;
+  }
+  .right p {
+    margin: 20px 0;
+    font-weight: 500;
+    line-height: 25px;
+  }
+  .right a {
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: white;
+    color: black;
+    padding: 20px 30px;
+    display: inline-block;
+    letter-spacing: 2px;
+  }
+
+  /*
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+    height: 900px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  
+  }
+  
+  /* Right column 
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+  }
+  
+  /* headshot image 
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Add a card effect for articles 
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Clear floats after the columns 
+  .row:after {
+    content: "";
+  /*  display: table;
+    clear: both; 
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
