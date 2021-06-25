@@ -12,18 +12,24 @@
     padding: 0;
   }
 
+   html, body {
+     height: 100%;
+}
+
+
   body {
   background-image: url(../Pictures/Linechart.jpg);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    flex-direction: column;
   }
   
   header {
     z-index: 1001;
     position: -webkit-sticky;
-    position: sticky;
     top: 0;
-    padding: 20px 35px;
-  /*  background-color: var(--secondary-color); */
+    margin-bottom: 50px;
+    padding: 15px 20px;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -46,11 +52,24 @@
     text-decoration: none;
   }
 
+  
+footer {
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    width: 100%;
+  }
+  
+footer div {
+    line-height: 1.5;
+}
+
   ul.leftnav {
     list-style-type: none;
     margin: 0;
     padding: 0;
-  /*  background-color: var(--secondary-color); */
     position: fixed;
     overflow: auto;
     font-size: 1.5vw;
@@ -74,24 +93,77 @@
     color: var(--style-color);
   }
 
-.section {
-    padding: 50px;
+  .content {
+    margin: 1px auto;
+    padding-bottom: 0px;
+    padding-left: 300px;
+    padding-right: 300px;
+    display: flex;
+    flex: 1 0 auto;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .section-main {
+    font-size: 48px;
+    color: var(--secondary-color);
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
+  }
+
+/* Live price widgets */
+
+/*.price {
+
+}*/
+
+.basis {
+    background-color: var(--style-color);
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 5px solid var(--style-color);
+    border-radius: 4px;
+    line-height: 14px;
+    font-feature-settings: normal;
+    box-shadow: inset 0 -20px 0 0 var(--primary-color);
+}
+
+.chart {
+    height: 560px;
+    padding: 1px;
+    margin: 0px;
+    width: 100%;
+
+}
+.converter {
+    width: 400px;
+    height: 335px;
+    block-size: 335px;
+    height:315px; 
+}
+
+.pricebox {
+    width: 300px;
+    height: 200px;
+    padding: 0px;
+    margin: 0px;
+    block-size: 220px;
+}
+
+.pricebox iframe {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    scroll-behavior: auto;
 }
 
 .cointracker {
     height:62px;
-    background-color: var(--style-color);
-    overflow:hidden;
-    box-sizing: border-box;
-    border: 1px solid var(--secondary-color);
-    border-radius: 4px;
-    text-align: right;
-    line-height:14px;
-    block-size:62px;
-    font-size: 12px;
-    font-feature-settings: normal;
-    box-shadow: inset 0 -20px 0 0 var(--primary-color);
-    padding:1px;
     padding: 0px; 
     margin: 0px;
     width: 100%;
@@ -104,16 +176,4 @@
     width: 100%;
     height: 36px;
     scroll-behavior: auto;
-}
-
-footer {
-    padding: 40px 35px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-  
-footer div {
-    line-height: 1.5;
 }
